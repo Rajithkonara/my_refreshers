@@ -15,6 +15,7 @@ interface Inteface2 {
 
 public class Trick implements Inteface1, Inteface2 {
     public static void main(String[] args) {
+
         new Trick().go();
     }
 

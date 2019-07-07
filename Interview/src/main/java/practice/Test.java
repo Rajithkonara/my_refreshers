@@ -8,6 +8,13 @@ import java.util.ArrayList;
 public class Test {
 
     public static void main(String[] args) {
+
+
+        int value = 7;
+        value = calculate(7);
+        System.out.println(value);
+
+
         ArrayList<String> msisdns = new ArrayList<>(5);
 
         msisdns.add("93373524301");
@@ -27,6 +34,12 @@ public class Test {
 
     static boolean isBlacklisted(String msisdn) {
         return msisdn.equals("93373524303");
+    }
+
+    static int calculate(int data) {
+        int tempValue = data + 3;
+        int newValue = tempValue * 2;
+        return newValue;
     }
 
 }
