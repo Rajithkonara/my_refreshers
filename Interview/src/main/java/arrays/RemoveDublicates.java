@@ -9,7 +9,7 @@ public class RemoveDublicates {
         int[] input = {1, 1, 2, 2, 3, 4, 5};
 
         for (int x: input) {
-            System.out.println("Array with dublicates : " + x);
+            System.out.println("Array with duplicates : " + x);
         }
 
         //new array

@@ -20,6 +20,22 @@ public class FindLandS {
         System.out.println(largest);
         System.out.println(smallest);
 
+        System.out.println("from the method " +  findLargest(arr));
+
+    }
+
+
+    static int findLargest(int[] arr) {
+
+        int largest = 0;
+
+        for (int num: arr) {
+            if (largest < num) {
+                largest = num;
+            }
+        }
+
+        return largest;
     }
 
 }

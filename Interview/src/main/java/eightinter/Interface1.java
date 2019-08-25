@@ -3,7 +3,7 @@ package eightinter;
 @FunctionalInterface
 public interface Interface1 {
 
-    void method1(String tesy);
+    void method1(String test);
 
     default void log(String str) {
         System.out.println("I1 logging "+str);
