@@ -9,13 +9,15 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
 
-        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.connection.pool_size">10</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Innodb by default -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL55Dialect</property>
 
         <!--create table automatically-->
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <!--mapping models classes-->
         <mapping class="com.rajithk.hibernate.dto.UserDetails" />

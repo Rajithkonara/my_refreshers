@@ -2,15 +2,14 @@ package hackerranker;
 
 public class HourGlass {
 
-    private static int hourglassSum(int[][] arr) {
+    public static int hourglassSum(int[][] arr, int glassSize) {
 
-        int size = 5;
         int currentHourGlassSum = 0;
         int maxHourglassSum = Integer.MIN_VALUE;
 
-        for (int i = 0; i < size - 2; i++) {
+        for (int i = 0; i < glassSize - 2; i++) {
 
-            for (int j = 0; j < size - 2; j++) {
+            for (int j = 0; j < glassSize - 2; j++) {
                 currentHourGlassSum = arr[i][j] + arr[i][j + 1] + arr[i][j + 2] +
                         arr[i + 1][j + 1] + arr[i + 2][j] + arr[i + 2][j + 1] + arr[i + 2][j + 2];
 
@@ -38,7 +37,7 @@ public class HourGlass {
             System.out.println(" ");
         }
 
-        System.out.println("Max hourglass sum " + hourglassSum(arr));
+        System.out.println("Max hourglass sum " + hourglassSum(arr, 5));
 
     }
 

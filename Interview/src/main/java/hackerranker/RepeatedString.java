@@ -2,7 +2,7 @@ package hackerranker;
 
 public class RepeatedString {
 
-    private static long repeatedString(String s, long n) {
+    public static long repeatedString(String s, long n) {
 
     long countS = 0;
     long totalCount = 0;

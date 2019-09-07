@@ -25,6 +25,12 @@ public class CopyArray {
             System.out.println(element);
         }
 
+
+        String str;
+        Object nullValue = null;
+        str = (String) nullValue;
+        System.out.println(str);
+
     }
 
 }

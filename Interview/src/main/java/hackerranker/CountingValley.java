@@ -7,7 +7,6 @@ public class CountingValley {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("No of steps \n path");
-        int n = scanner.nextInt();
         String s = scanner.next();
 
         int valley = 0;
