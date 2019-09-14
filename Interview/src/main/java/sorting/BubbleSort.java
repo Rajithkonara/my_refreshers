@@ -37,7 +37,8 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] input = {4, 2, 2, 6, 23, 12, 34, 0, 1};
-        bsort(input);
+//        int[] input = {4, 2, 2, 6, 23, 12, 34, 0, 1};
+        int[] arr = {1 ,2 ,4, 3};
+        bsort(arr);
     }
 }
