@@ -1,5 +1,10 @@
 package whiteboard;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+
 public class SumEquals {
 
 
@@ -44,15 +49,34 @@ public class SumEquals {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 4, 4};
-//        int[] arr = {1, 2, 3, 9};
+        int[] arr = {4, 2, 4, 4};
+        int[] arr2 = {1, 4, 4, 8};
 
         int answer = 8;
 
-//        System.out.println(returnSum(arr, answer));
+//        System.out.println(returnSum(arr2, answer));
 
         System.out.println(hasPairWithSum(arr, answer));
 
+        System.out.println(haspair(arr, answer));
+    }
+
+
+
+    static boolean haspair(int[] arr, int ans) {
+        HashSet<Integer> compl = new HashSet<>();
+
+        List<Integer> c = new ArrayList<>();
+
+
+        for (int value: arr) {
+            if (c.contains(value)) {
+                System.out.println(Arrays.toString(arr));
+                return true;
+            }
+            c.add(ans - value);
+        }
+        return false;
     }
 
 }
