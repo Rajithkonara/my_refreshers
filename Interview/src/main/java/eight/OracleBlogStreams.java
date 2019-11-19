@@ -62,7 +62,7 @@ public class OracleBlogStreams {
         boolean lessThan50  = numbers2.stream()
                                     .allMatch(p -> p > 5);
 
-        System.out.println(lessThan50);
+        System.out.println("all match "  +lessThan50);
 
 
         // Map

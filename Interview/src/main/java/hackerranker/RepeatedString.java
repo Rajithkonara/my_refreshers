@@ -33,7 +33,7 @@ public class RepeatedString {
     }
 
     public static void main(String[] args) {
-        String a = "a";
+        String a = "aabbcsd";
         long n = 1000000000;
         System.out.println(repeatedString(a, n));
     }

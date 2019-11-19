@@ -30,6 +30,6 @@ public class ForEach {
      //test
         List<String> names = Arrays.asList("Rajith", "Supitha", "Iroshan", "Shajee");
         iterateThroughList(names);
-       iterateExp(names);
+        iterateExp(names);
     }
 }
