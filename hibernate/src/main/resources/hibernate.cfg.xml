@@ -20,7 +20,7 @@
         <property name="hbm2ddl.auto">create</property>
 
         <!--mapping models classes-->
-        <mapping class="com.rajithk.hibernate.dto.UserDetails" />
+        <mapping class="com.rajithk.hibernate.dto.UserDetails"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -16,7 +16,7 @@ public class MultiplyTwoMatrices {
 
                 // this loop for the columns
                 for (int y = 0; y < 3; y++) {
-                    result[i][x] = result[i][x]  + a[i][y] * b[y][x];
+                    result[i][x] = result[i][x] + a[i][y] * b[y][x];
                 }
 
                 System.out.print(result[i][x] + " ");  //printing matrix element

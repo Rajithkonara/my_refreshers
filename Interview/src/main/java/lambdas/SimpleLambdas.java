@@ -18,7 +18,7 @@ public class SimpleLambdas {
 
         System.out.println("all dogs  " + dogs);
         System.out.println("min age 7 " + minAge(dogs, 7).toString());
-        System.out.println("max weight "+ maxWeight(dogs, 34).toString());
+        System.out.println("max weight " + maxWeight(dogs, 34).toString());
 
         //using
         System.out.println(dogQueries(dogs, dog -> dog.getAge() < 9));
@@ -27,7 +27,7 @@ public class SimpleLambdas {
 
     private static ArrayList<Dog> minAge(ArrayList<Dog> dogArrayList, int testFor) {
         ArrayList<Dog> result1 = new ArrayList<>();
-        for (Dog d: dogArrayList) {
+        for (Dog d : dogArrayList) {
             if (d.getAge() >= testFor) {
                 result1.add(d);
             }
@@ -38,7 +38,7 @@ public class SimpleLambdas {
 
     private static ArrayList<Dog> maxWeight(ArrayList<Dog> dogArrayList, int testFor) {
         ArrayList<Dog> result1 = new ArrayList<>();
-        for (Dog d: dogArrayList) {
+        for (Dog d : dogArrayList) {
             if (d.getWeight() <= testFor) {
                 result1.add(d);
             }
@@ -49,10 +49,10 @@ public class SimpleLambdas {
     //using lambdas
     private static ArrayList<Dog> dogQueries(ArrayList<Dog> dogArrayList, Predicate<Dog> expr) {
         ArrayList<Dog> result1 = new ArrayList<>();
-        for (Dog d: dogArrayList)
+        for (Dog d : dogArrayList)
             if (expr.test(d))   //key
                 result1.add(d);
-            return result1;
+        return result1;
     }
 
 
@@ -69,8 +69,13 @@ class Dog {
         this.age = age;
     }
 
-    int getWeight() { return weight; }
-    int getAge() { return age; }
+    int getWeight() {
+        return weight;
+    }
+
+    int getAge() {
+        return age;
+    }
 
     public String toString() {
         return name;

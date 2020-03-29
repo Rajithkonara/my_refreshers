@@ -12,13 +12,13 @@ import static java.util.stream.Collectors.toList;
 public class Map {
 
 
-    static void iterateThroughMap(java.util.Map<?,?> map) {
-        map.forEach((k,v) -> System.out.println("key: "+k+" Value: "+v));
+    static void iterateThroughMap(java.util.Map<?, ?> map) {
+        map.forEach((k, v) -> System.out.println("key: " + k + " Value: " + v));
     }
 
     public static void main(String[] args) {
 
-        java.util.Map<String,String> countryCapitalMap = new HashMap<>();
+        java.util.Map<String, String> countryCapitalMap = new HashMap<>();
         countryCapitalMap.put("ASS", "Wshington DC");
         countryCapitalMap.put("England", "London");
         countryCapitalMap.put("France", "Paris");

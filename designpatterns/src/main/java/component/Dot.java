@@ -2,7 +2,7 @@ package component;
 
 import java.awt.*;
 
-public class Dot extends BaseShape{
+public class Dot extends BaseShape {
 
     private final int DOT_SIZE = 3;
 

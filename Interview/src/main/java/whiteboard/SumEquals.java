@@ -12,7 +12,7 @@ public class SumEquals {
 
         for (int i = 0; i < arr.length; i++) {
 
-            for (int j = i+1; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] + arr[j] == ans) {
                     System.out.println(arr[i] + " " + arr[j]);
                     return true;
@@ -32,7 +32,7 @@ public class SumEquals {
         while (low < high) {
             int x = arr[low] + arr[high];
             if (x == ans) {
-                System.out.println(low  +" " + high);
+                System.out.println(low + " " + high);
                 return true;
             } else if (x < ans) {
                 low++;
@@ -43,8 +43,6 @@ public class SumEquals {
 
         return false;
     }
-
-
 
 
     public static void main(String[] args) {
@@ -62,14 +60,13 @@ public class SumEquals {
     }
 
 
-
     static boolean haspair(int[] arr, int ans) {
         HashSet<Integer> compl = new HashSet<>();
 
         List<Integer> c = new ArrayList<>();
 
 
-        for (int value: arr) {
+        for (int value : arr) {
             if (c.contains(value)) {
                 System.out.println(Arrays.toString(arr));
                 return true;

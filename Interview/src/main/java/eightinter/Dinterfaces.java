@@ -7,6 +7,7 @@ public class Dinterfaces implements Interface1, Interface2 {
     public void method2() {
 
     }
+
     @Override
     public void method1(String tesy) {
 
@@ -14,7 +15,7 @@ public class Dinterfaces implements Interface1, Interface2 {
 
     @Override
     public void log(String str) {
-        System.out.println("MyClass logging::"+str);
+        System.out.println("MyClass logging::" + str);
         Interface1.print(str);
     }
 

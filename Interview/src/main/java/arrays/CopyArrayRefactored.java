@@ -26,7 +26,7 @@ public class CopyArrayRefactored {
         for (int i = 0; i < currentSize; i++) {
             tempArr[i] = originalArray[i];
         }
-        tempArr[newSize-1] = newItem;
+        tempArr[newSize - 1] = newItem;
         return tempArr;
     }
 

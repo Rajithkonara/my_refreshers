@@ -4,7 +4,7 @@ public class ThreadSych {
 
     private int count = 0;
 
-    public synchronized void increament () {
+    public synchronized void increament() {
         count++;
     }
 
@@ -18,7 +18,7 @@ public class ThreadSych {
             @Override
             public void run() {
 
-                for (int i =0; i <10000; i++) {
+                for (int i = 0; i < 10000; i++) {
                     increament();
                 }
             }
@@ -28,7 +28,7 @@ public class ThreadSych {
             @Override
             public void run() {
 
-                for (int i =0; i <10000; i++) {
+                for (int i = 0; i < 10000; i++) {
                     increament();
                 }
             }

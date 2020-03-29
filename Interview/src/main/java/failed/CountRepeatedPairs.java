@@ -18,13 +18,12 @@ public class CountRepeatedPairs {
             Character character = input.charAt(i);
 
             if (map.containsKey(character)) {
-                map.put(character, map.get(character) + 1 );
+                map.put(character, map.get(character) + 1);
             } else {
                 map.put(character, 1);
             }
 
         }
-
 
 
         System.out.println(map);
@@ -33,7 +32,7 @@ public class CountRepeatedPairs {
         Character mostRepeated = ' ';
         int max = 0;
 
-        for (Map.Entry<Character, Integer> key: map.entrySet()) {
+        for (Map.Entry<Character, Integer> key : map.entrySet()) {
             int currentValue = key.getValue();
             if (currentValue % 2 == 0) {
                 max++;
@@ -45,9 +44,6 @@ public class CountRepeatedPairs {
 
 
     }
-
-
-
 
 
 }

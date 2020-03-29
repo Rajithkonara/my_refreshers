@@ -11,7 +11,7 @@ public class TwoSum {
 
             for (int x = i; x < nums.length; x++) {
                 if (nums[i] == target - nums[x]) {
-                    return new int[] { i, x };
+                    return new int[]{i, x};
                 }
             }
 
@@ -26,7 +26,7 @@ public class TwoSum {
 
         int[] indexes = twoSum(nums, target);
 
-        for (int x: indexes) {
+        for (int x : indexes) {
             System.out.println(nums[x]);
         }
 

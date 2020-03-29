@@ -14,7 +14,7 @@ class ProcessorTwo implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Stating :  " +id);
+        System.out.println("Stating :  " + id);
 
         try {
             Thread.sleep(5000);
@@ -22,7 +22,7 @@ class ProcessorTwo implements Runnable {
             Thread.currentThread().interrupt();
         }
 
-        System.out.println("Completed : " +id);
+        System.out.println("Completed : " + id);
     }
 }
 

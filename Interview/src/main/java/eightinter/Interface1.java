@@ -6,10 +6,10 @@ public interface Interface1 {
     void method1(String test);
 
     default void log(String str) {
-        System.out.println("I1 logging "+str);
+        System.out.println("I1 logging " + str);
     }
 
     static void print(String str) {
-        System.out.println("Printing "+str);
+        System.out.println("Printing " + str);
     }
 }

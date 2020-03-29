@@ -13,15 +13,15 @@ public class ReverseRecursivly {
             return str;
         } else {
             reverse += str.charAt(str.length() - 1)
-                    +reverseString(str.substring(0, str.length()-1));
+                    + reverseString(str.substring(0, str.length() - 1));
             return reverse;
         }
     }
 
     public static void main(String[] args) {
         ReverseRecursivly recursivly = new ReverseRecursivly();
-        System.out.println("Result: "+recursivly.reverseString("tesT"));
+        System.out.println("Result: " + recursivly.reverseString("tesT"));
         String t = "tesT";
-        System.out.println(t.substring(0, t.length()-1));
+        System.out.println(t.substring(0, t.length() - 1));
     }
 }

@@ -19,7 +19,7 @@ public class Application {
 
         thread.start();
 
-        for (int i =0; i < 10; i ++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("From main thread " + i);
         }
 

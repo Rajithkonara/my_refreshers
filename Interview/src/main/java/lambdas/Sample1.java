@@ -10,20 +10,23 @@ public class Sample1 {
 
         // Legal Lambdas
 
-        sample.go( x -> 7 < 5);
-        sample.go(x -> adder(2, 1) > 5 );
+        sample.go(x -> 7 < 5);
+        sample.go(x -> adder(2, 1) > 5);
 
         sample.go((Sample1 x) -> {
             int z = 5;
             return adder(z, 7) > 8;
         });
 
-        sample.go(x -> { int w = 5; return adder(w, 6) > 8; }); //no arg type block
+        sample.go(x -> {
+            int w = 5;
+            return adder(w, 6) > 8;
+        }); //no arg type block
 
         int a = 5;
         int b = 6;
         sample.go(x -> adder(a, b) > 8); // in scope vars
-        sample.go((Sample1 x ) -> adder(a, b) > 14);
+        sample.go((Sample1 x) -> adder(a, b) > 14);
 
     }
 

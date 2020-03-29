@@ -24,7 +24,7 @@ public class MostRepeated {
         Character mostRepeated = ' ';
         int max = 0;
 
-        for (Map.Entry<Character, Integer> key: map.entrySet()) {
+        for (Map.Entry<Character, Integer> key : map.entrySet()) {
             int currentValue = key.getValue();
             if (currentValue > max) {
                 mostRepeated = key.getKey();

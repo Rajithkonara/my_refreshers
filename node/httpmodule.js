@@ -4,7 +4,7 @@ const server = http.createServer((requset, response) => {
     if (requset.url === '/') {
         response.write('hello world');
         response.end();
-    } 
+    }
 
     if (requset.url === '/api/courses') {
         response.write(JSON.stringify([1, 2, 3, 4]));

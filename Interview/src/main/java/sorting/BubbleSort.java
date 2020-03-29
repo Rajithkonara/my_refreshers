@@ -6,7 +6,7 @@ public class BubbleSort {
         boolean isSwapped;
         int length = arr.length;
         int k;
-        for (int m = 0; m < length-1; m++) {
+        for (int m = 0; m < length - 1; m++) {
             isSwapped = false;
             for (int i = 0; i < length - 1; i++) {
                 k = i + 1;
@@ -38,7 +38,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
 //        int[] input = {4, 2, 2, 6, 23, 12, 34, 0, 1};
-        int[] arr = {1 ,2 ,4, 3};
+        int[] arr = {1, 2, 4, 3};
         bsort(arr);
     }
 }

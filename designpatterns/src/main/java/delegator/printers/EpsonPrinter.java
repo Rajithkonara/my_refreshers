@@ -10,12 +10,13 @@ import org.slf4j.LoggerFactory;
  *
  * @see Printer
  */
-public class EpsonPrinter implements Printer  {
+public class EpsonPrinter implements Printer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CanonPrinter.class);
 
     /**
      * {@inheritDoc}
+     *
      * @param message to be printed to the screen
      */
     @Override

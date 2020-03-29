@@ -8,7 +8,7 @@ public class BsortPracone {
         int length = arr.length;
         int k;
 
-        for (int m = 0; m < length-1; m++) {
+        for (int m = 0; m < length - 1; m++) {
             isSwapped = false;
 
             for (int i = 0; i < length - 1; i++) {

@@ -18,7 +18,7 @@ public class TwoSumHashMap {
             int key = target - nums[i];
 
             if (map.containsKey(key) && map.get(key) != i) {
-                return new int[] {i, map.get(key)};
+                return new int[]{i, map.get(key)};
             }
         }
 
@@ -33,7 +33,7 @@ public class TwoSumHashMap {
             int key = target - nums[x];
 
             if (map.containsKey(key) && map.get(key) != x) {
-                return new int[] {x, map.get(key)};
+                return new int[]{x, map.get(key)};
             }
 
             map.put(nums[x], x);
@@ -50,7 +50,7 @@ public class TwoSumHashMap {
 
         int[] indexes = twoSum(nums, target);
 
-        for (int x: indexes) {
+        for (int x : indexes) {
             System.out.println(nums[x]);
         }
 

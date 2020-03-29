@@ -2,14 +2,13 @@ package observer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * Weather can be observed by implementing {@link WeatherObserver} interface and registering as
  * listener.
- *
  */
 public class Weather {
 

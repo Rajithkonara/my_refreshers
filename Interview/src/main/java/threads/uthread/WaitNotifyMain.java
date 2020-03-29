@@ -6,7 +6,7 @@ public class WaitNotifyMain {
 
         final WaitNotify waitNotify = new WaitNotify();
 
-        Thread t1 =  new Thread(new Runnable() {
+        Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {

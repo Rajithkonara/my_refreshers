@@ -4,19 +4,19 @@ public class ReturnLargeWord {
 
     public static String largestWord(String sentence) {
 
-    String[] words = sentence.split(" ");
+        String[] words = sentence.split(" ");
 
-    int max = 0;
-    String word = "";
+        int max = 0;
+        String word = "";
 
-    for (int i = 0; i < words.length; i++) {
-        if (words[i].length() > max) {
-            max = words[i].length();
-            word = words[i];
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].length() > max) {
+                max = words[i].length();
+                word = words[i];
+            }
         }
-    }
 
-    return word;
+        return word;
 
     }
 
@@ -27,7 +27,6 @@ public class ReturnLargeWord {
         System.out.println(largestWord(sentence));
 
     }
-
 
 
 }

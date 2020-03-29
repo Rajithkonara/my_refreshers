@@ -17,11 +17,11 @@ const event = {
     guestList: ['konara', 'nimal', 'kamal'],
     printpationList() {
         console.log('Guest list 4 ' + this.name);
-        
-        this.guestList.forEach((guest) => { 
+
+        this.guestList.forEach((guest) => {
             console.log(guest + 'is attending ' + this.name);
         });
-        
+
     }
 }
 

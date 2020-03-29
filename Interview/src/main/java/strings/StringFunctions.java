@@ -9,9 +9,9 @@ public class StringFunctions {
         String d = "Banana Peels";
         String e = "Pears";
 
-        String[] fruits = {a, b, c ,d, e};
+        String[] fruits = {a, b, c, d, e};
 
-        for (String f: fruits) {
+        for (String f : fruits) {
 
             int index = 1;
             System.out.print(f.charAt(index));

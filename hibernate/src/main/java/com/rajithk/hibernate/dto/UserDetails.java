@@ -11,8 +11,12 @@ public class UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private @Getter @Setter int userId;
-    private @Getter @Setter String userName;
+    private @Getter
+    @Setter
+    int userId;
+    private @Getter
+    @Setter
+    String userName;
 
 
     //override the column name using attributes
@@ -23,10 +27,14 @@ public class UserDetails {
             @AttributeOverride(name = "state", column = @Column(name = "HOME_STATE_NAME")),
             @AttributeOverride(name = "pinCode", column = @Column(name = "HOME_PIN_CODE"))
     })
-    private @Getter @Setter Address homeAddress;
+    private @Getter
+    @Setter
+    Address homeAddress;
 
 
     @Embedded
-    private @Getter @Setter Address officeAddress;
+    private @Getter
+    @Setter
+    Address officeAddress;
 
 }

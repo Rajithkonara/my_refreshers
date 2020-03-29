@@ -9,7 +9,8 @@ import factory.thargaryen.ThargaryenKingFactory;
  */
 public class KingDomBuilderFactory {
 
-    private KingDomBuilderFactory() {}
+    private KingDomBuilderFactory() {
+    }
 
     private static KingDomBuilderFactory instance;
 

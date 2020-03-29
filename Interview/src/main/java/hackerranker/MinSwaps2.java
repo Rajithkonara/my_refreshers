@@ -9,8 +9,8 @@ public class MinSwaps2 {
     static int minimumSwaps(int[] arr) {
         int swaps = 0;
 
-        for(int current=0; current<arr.length; ) {
-            if(!inPlace(arr, current)) {
+        for (int current = 0; current < arr.length; ) {
+            if (!inPlace(arr, current)) {
                 ++swaps;
                 swapInPlace(arr, current);
             } else {

@@ -49,7 +49,6 @@ public class OracleBlogStreams {
         System.out.println("stream duration " + duration);
 
 
-
 //        System.out.println("forr c" + temp);
 
         System.out.println(twoEvenSquares);
@@ -57,12 +56,12 @@ public class OracleBlogStreams {
 
         // Match
 
-        List<Integer> numbers2 = Arrays.asList(7, 10 , 30 , 34 ,55 ,23, 56 ,77 ,88 ,90 ,100);
+        List<Integer> numbers2 = Arrays.asList(7, 10, 30, 34, 55, 23, 56, 77, 88, 90, 100);
 
-        boolean lessThan50  = numbers2.stream()
-                                    .allMatch(p -> p > 5);
+        boolean lessThan50 = numbers2.stream()
+                .allMatch(p -> p > 5);
 
-        System.out.println("all match "  +lessThan50);
+        System.out.println("all match " + lessThan50);
 
 
         // Map
@@ -84,7 +83,7 @@ public class OracleBlogStreams {
 
         //reduce
         int sum = numbers.stream().reduce(0, (a, b) -> a + b);
-        System.out.println("sum of numbers "  +sum);
+        System.out.println("sum of numbers " + sum);
 
         int product = numbers.stream().reduce(1, (a, b) -> a * b);
         int product2 = numbers.stream().reduce(1, Integer::max);
@@ -95,7 +94,7 @@ public class OracleBlogStreams {
 
         //Numeric streams  primitive specialized stream interfaces
 
-        int streamedInt  = numbers.stream().mapToInt(p -> p).sum();
+        int streamedInt = numbers.stream().mapToInt(p -> p).sum();
         System.out.println(streamedInt);
 
         //Range

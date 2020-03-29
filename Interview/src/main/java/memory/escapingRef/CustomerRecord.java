@@ -40,5 +40,4 @@ public class CustomerRecord implements Iterable<Customer> {
     }
 
 
-
 }

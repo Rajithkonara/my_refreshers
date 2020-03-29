@@ -21,8 +21,8 @@ const fs = require('fs');
 const dataBuffer1 = fs.readFileSync('1-json.json');
 const dataJson1 = dataBuffer1.toString();
 const data2 = JSON.parse(dataJson1);
-data2.name="Rajith";
-data2.age=25;
+data2.name = "Rajith";
+data2.age = 25;
 
 const userJson = JSON.stringify(data2);
 fs.writeFileSync('1-json.json', userJson);

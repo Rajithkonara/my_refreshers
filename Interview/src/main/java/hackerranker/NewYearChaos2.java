@@ -7,7 +7,7 @@ public class NewYearChaos2 {
         int size = arr.length;
         int count = 0;
 
-        for (int x = size-1; x >= 0; x--) {
+        for (int x = size - 1; x >= 0; x--) {
 
             if (arr[x] != (x + 1)) {
 
@@ -30,7 +30,6 @@ public class NewYearChaos2 {
     }
 
 
-
     private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
@@ -40,7 +39,7 @@ public class NewYearChaos2 {
 
     public static void main(String[] args) {
 
-        int[] arr = {5, 1, 2, 3, 7, 8 ,4, 6};
+        int[] arr = {5, 1, 2, 3, 7, 8, 4, 6};
         minimumBribes(arr);
 
     }

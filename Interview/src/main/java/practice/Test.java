@@ -20,12 +20,12 @@ public class Test {
         msisdns.add("93373524301");
         msisdns.add("93373524300");
 
-        for (String cur: msisdns) {
-                if (isBlacklisted(cur)) {
-                    System.out.println("Blacklisted Number: " +cur);
-                    System.err.println("blacklisted");
-                    break;
-                }
+        for (String cur : msisdns) {
+            if (isBlacklisted(cur)) {
+                System.out.println("Blacklisted Number: " + cur);
+                System.err.println("blacklisted");
+                break;
+            }
         }
 
         System.out.println(msisdns);

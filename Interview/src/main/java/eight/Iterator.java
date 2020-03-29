@@ -19,13 +19,13 @@ public class Iterator {
         java.util.Iterator<Integer> it = myList.iterator();
         while (it.hasNext()) {
             Integer i = it.next();
-            System.out.println("Iterator Value::"+i);
+            System.out.println("Iterator Value::" + i);
         }
 
         //traversing through forEach method of Iterable with anonymous class
         myList.forEach(new Consumer<Integer>() {
             public void accept(Integer integer) {
-                System.out.println("forEach anonymous class Value::"+integer);
+                System.out.println("forEach anonymous class Value::" + integer);
             }
         });
 
@@ -39,10 +39,10 @@ public class Iterator {
 }
 
 //Consumer implementation that can be reused
-class MyConsumer implements Consumer<Integer>{
+class MyConsumer implements Consumer<Integer> {
 
     public void accept(Integer t) {
-        System.out.println("Consumer impl Value::"+t);
+        System.out.println("Consumer impl Value::" + t);
     }
 
 

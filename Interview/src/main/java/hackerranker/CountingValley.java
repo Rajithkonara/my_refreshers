@@ -12,11 +12,11 @@ public class CountingValley {
         int valley = 0;
         int curretLevel = 0;
 
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (c == 'U') ++curretLevel;
             if (c == 'D') --curretLevel;
 
-            if (curretLevel == 0 && c == 'U' ) {
+            if (curretLevel == 0 && c == 'U') {
                 ++valley;
             }
         }

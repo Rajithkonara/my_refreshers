@@ -20,7 +20,6 @@ public class Trick implements Inteface1, Inteface2 {
     }
 
 
-
     private void go() {
         dostuff();
     }

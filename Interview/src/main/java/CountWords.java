@@ -5,7 +5,7 @@ public class CountWords {
 
     public static void main(String[] args) {
 
-        String sentence = "My name is My ident or or" ;
+        String sentence = "My name is My ident or or";
 
         countWords(sentence);
 
@@ -18,7 +18,7 @@ public class CountWords {
 
         HashMap<Integer, String> map = new HashMap<>();
 
-        for (int i =0; i < splitted.length; i++) {
+        for (int i = 0; i < splitted.length; i++) {
             map.put(i, splitted[i]);
         }
 
@@ -45,15 +45,15 @@ public class CountWords {
         String rWord = "";
         int max = 0;
 
-        for (Map.Entry<String, Integer> vales: newMap.entrySet()) {
+        for (Map.Entry<String, Integer> vales : newMap.entrySet()) {
             int currentVal = vales.getValue();
-            if (currentVal >  max) {
-                rWord =  vales.getKey();
+            if (currentVal > max) {
+                rWord = vales.getKey();
                 max = currentVal;
             }
         }
 
-        System.out.println("max word : "+ rWord + " repeated " + max + " times");
+        System.out.println("max word : " + rWord + " repeated " + max + " times");
 
 
         return 0;

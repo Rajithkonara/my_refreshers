@@ -27,7 +27,7 @@ public class ForEach {
 
     public static void main(String[] args) {
 
-     //test
+        //test
         List<String> names = Arrays.asList("Rajith", "Supitha", "Iroshan", "Shajee");
         iterateThroughList(names);
         iterateExp(names);

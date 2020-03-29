@@ -6,8 +6,8 @@ public class StackImp {
     private int top;
 
     private StackImp(int n) {
-     stackArr = new int[n];
-     top = -1;
+        stackArr = new int[n];
+        top = -1;
     }
 
     private void push(int x) {
@@ -22,10 +22,10 @@ public class StackImp {
         return stackArr[top];
     }
 
-    private boolean isEmpty(){
+    private boolean isEmpty() {
         return (top == -1);
     }
-    
+
     public static void main(String[] args) {
         StackImp stackImp = new StackImp(5);
         stackImp.push(1);

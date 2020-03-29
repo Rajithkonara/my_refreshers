@@ -1,9 +1,11 @@
 package eight;
 
-import practice.Test;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class TestStreams {
 
@@ -39,11 +41,7 @@ public class TestStreams {
 
         List<Transaction> transactions = new ArrayList<>();
 
-        List<String> tra =transactionList.stream().map(p -> p.getType()).collect(Collectors.toList());
-
-
-
-        for (Transaction t: transactionList) {
+        for (Transaction t : transactionList) {
             if (t.getType().equals("cash")) {
                 transactions.add(t);
             }
@@ -58,12 +56,12 @@ public class TestStreams {
 
         transactions.sort(comparator);
 
-        for (Transaction t: transactions) {
-            System.out.println(t.getId() + " " + t.getAmount() + " "+ t.getType());
+        for (Transaction t : transactions) {
+            System.out.println(t.getId() + " " + t.getAmount() + " " + t.getType());
         }
 
         List<Integer> transactionAmount = new ArrayList<>();
-        for(Transaction t: transactions){
+        for (Transaction t : transactions) {
             transactionAmount.add(t.getAmount());
         }
 
@@ -86,7 +84,7 @@ public class TestStreams {
             amount.add(transaction1Amount);
         }
 
-        System.out.println("For loop list" + amount );
+        System.out.println("For loop list" + amount);
 
 
         List<Integer> amoun2 = transactionList.parallelStream()
@@ -96,13 +94,10 @@ public class TestStreams {
                 .collect(Collectors.toList());
 
 
-
-
-
         System.out.println(amoun2);
 
 
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9 ,10);
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         List<Integer> evenNumbers = numbers
                 .stream()
@@ -113,10 +108,16 @@ public class TestStreams {
         System.out.println(evenNumbers);
 
 
-        boolean avail = numbers.stream().allMatch( n -> n > 10);
+        boolean avail = numbers.stream().allMatch(n -> n > 10);
 
         System.out.println("available: " + avail);
 
+
+        IntStream oddNumbers =
+                IntStream.range(10, 30)
+                        .filter(n -> n % 2 == 1);
+
+        System.out.println("ranged streams " + oddNumbers);
     }
 
 }

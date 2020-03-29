@@ -21,7 +21,7 @@ public class MostRepeatedWords {
 
         System.out.println(Arrays.toString(words));
 
-        for (String word: words) {
+        for (String word : words) {
             if (word.length() > 0) {
                 if (wordCountMap.containsKey(word)) {
 
@@ -37,7 +37,7 @@ public class MostRepeatedWords {
         int max = 0;
         String mostRepeatedString = "";
 
-        for (Map.Entry<String, Integer> val: wordCountMap.entrySet()) {
+        for (Map.Entry<String, Integer> val : wordCountMap.entrySet()) {
             int currentVal = val.getValue();
             if (currentVal > max) {
                 mostRepeatedString = val.getKey();
@@ -47,7 +47,7 @@ public class MostRepeatedWords {
 
         System.out.println(wordCountMap);
 
-        System.out.println("Most Repeated word "+ mostRepeatedString + "\nRepeated " + max + " times" );
+        System.out.println("Most Repeated word " + mostRepeatedString + "\nRepeated " + max + " times");
 
         return mostRepeatedString;
 

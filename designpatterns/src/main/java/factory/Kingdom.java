@@ -8,6 +8,7 @@ public class Kingdom {
 
     /**
      * Create Kingdoms
+     *
      * @param factory
      */
     public void createKingdoms(KingdomFactory factory) {

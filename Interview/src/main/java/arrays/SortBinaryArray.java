@@ -27,8 +27,8 @@ public class SortBinaryArray {
 
     public static void main(String[] args) {
 
-        int[] a = { 1, 0, 0, 1, 0, 1, 0, 1, 1, 1,
-                1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0 };
+        int[] a = {1, 0, 0, 1, 0, 1, 0, 1, 1, 1,
+                1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0};
         sortB(a);
 
         for (int anA : a) System.out.print(anA + " ");

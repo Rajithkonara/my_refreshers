@@ -4,21 +4,21 @@ public class PassByEx {
 
     public static void main(String[] args) {
 
-        int x =10;
+        int x = 10;
         int y = 20;
 
         swapint(x, y);
-        System.out.println(x + " + " +y);
+        System.out.println(x + " + " + y);
 
         Balloon red = new Balloon("Red"); //memory reference 50
         Balloon blue = new Balloon("Blue"); //memory reference 100
 
         swap(red, blue);
-        System.out.println("red color="+red.getColor());
-        System.out.println("blue color="+blue.getColor());
+        System.out.println("red color=" + red.getColor());
+        System.out.println("blue color=" + blue.getColor());
 
         foo(blue);
-        System.out.println("blue color="+blue.getColor());
+        System.out.println("blue color=" + blue.getColor());
 
     }
 
@@ -37,7 +37,7 @@ public class PassByEx {
     static void swapint(int x, int y) {
         int temp = x;
         x = y;
-        y =temp;
+        y = temp;
     }
 
 

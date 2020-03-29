@@ -18,7 +18,7 @@ public class TwoDUtils {
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
 
-                System.out.print(arr[i][j]+ " ");
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
@@ -28,7 +28,7 @@ public class TwoDUtils {
     public static void main(String[] args) {
 
         int rows = 6;
-        int columns =6;
+        int columns = 6;
         int[][] arr = new int[rows][columns];
 
         for (int i = 0; i < rows; i++) {
@@ -40,7 +40,7 @@ public class TwoDUtils {
                 int arrItem = Integer.parseInt(arrRowItems[j].replace(" ", ","));
                 arr[i][j] = arrItem;
 
-                System.out.print(arr[i][j]+ " ");
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
@@ -48,7 +48,7 @@ public class TwoDUtils {
         char[] items = null;
         int[][] arrr = new int[rows][columns];
 
-        String[] inputString =   {"1 1 1 0 0 0 0 1 0 0 0 0 1 1 1 0 0 0 0 0 2 4 4 0 0 0 0 2 0 0 0 0 1 2 4 0"};
+        String[] inputString = {"1 1 1 0 0 0 0 1 0 0 0 0 1 1 1 0 0 0 0 0 2 4 4 0 0 0 0 2 0 0 0 0 1 2 4 0"};
 
         for (int i = 0; i < inputString.length; i++) {
             String[] rowItems = inputString;
@@ -61,8 +61,8 @@ public class TwoDUtils {
         for (int x = 0; x < rows; x++) {
             for (int y = 0; y < columns; y++) {
                 int arrayItem = Integer.parseInt(String.valueOf(items[y]));
-                arrr[x][y] =  arrayItem;
-                System.out.print( arrr[x][y] + " ");
+                arrr[x][y] = arrayItem;
+                System.out.print(arrr[x][y] + " ");
             }
         }
 
@@ -76,10 +76,7 @@ public class TwoDUtils {
 //            System.out.println();
 
 
-
-
     }
-
 
 
 }

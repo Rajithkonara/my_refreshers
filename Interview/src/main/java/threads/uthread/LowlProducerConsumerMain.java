@@ -6,7 +6,7 @@ public class LowlProducerConsumerMain {
 
         final LowlProducerConsumer waitNotify = new LowlProducerConsumer();
 
-        Thread t1 =  new Thread(new Runnable() {
+        Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {

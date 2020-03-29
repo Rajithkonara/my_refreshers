@@ -3,7 +3,7 @@ package component;
 import java.awt.*;
 
 //Abstract shape with basic functionality
-abstract class BaseShape implements  Shape {
+abstract class BaseShape implements Shape {
 
     public int x;
     public int y;
@@ -85,8 +85,7 @@ abstract class BaseShape implements  Shape {
     public void paint(Graphics graphics) {
         if (isSelected()) {
             enableSelectionStyle(graphics);
-        }
-        else {
+        } else {
             disableSelectionStyle(graphics);
         }
 

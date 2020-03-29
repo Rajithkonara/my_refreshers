@@ -7,7 +7,7 @@ public class GetMissingNumber {
 
         int totle;
 
-        totle = (size+1) * (size+2)/2;
+        totle = (size + 1) * (size + 2) / 2;
 
         for (int i = 0; i < size; i++) {
             totle = totle - arr[i];

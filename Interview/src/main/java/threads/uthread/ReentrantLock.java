@@ -28,7 +28,7 @@ public class ReentrantLock {
 
         try {
             increment();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
@@ -47,7 +47,7 @@ public class ReentrantLock {
 
         try {
             increment();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }

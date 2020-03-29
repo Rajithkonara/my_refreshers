@@ -6,7 +6,8 @@ public class Singleton {
     private static volatile Singleton instance;
 
     //only singleton can init
-    private Singleton() {}
+    private Singleton() {
+    }
 
     // using double check locking
     public static Singleton getInstance() {

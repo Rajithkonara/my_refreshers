@@ -16,7 +16,6 @@ public class GUtil {
         GPair<Integer, String> p4 = new GPair<>(1, "apple");
 
 
-
         boolean same = GUtil.compare(p1, p2);
 
         boolean same2 = GUtil.compare(p3, p4);

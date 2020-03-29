@@ -19,8 +19,6 @@ public class Streams {
         iterateThroughStream(countryList);
 
 
-
-
     }
 
 }

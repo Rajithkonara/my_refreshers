@@ -18,11 +18,11 @@ public class PerformanceTest {
         int[] a = arr;
         int e = arr.length;
         int m = Integer.MIN_VALUE;
-        for(int i=0; i < e; i++)
-            if(a[i] > m) m = a[i];
+        for (int i = 0; i < e; i++)
+            if (a[i] > m) m = a[i];
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
-        System.out.println("normal "+ duration);
+        System.out.println("normal " + duration);
 
         long startTime2 = System.nanoTime();
         int x = Arrays.stream(a)
@@ -38,8 +38,7 @@ public class PerformanceTest {
         ArrayList<Integer> al = new ArrayList<>();
         Random rand = new Random();
         int pick;
-        for (int j = 0; j<500000; j++)
-        {
+        for (int j = 0; j < 500000; j++) {
             pick = rand.nextInt();
             al.add(pick);
         }
@@ -47,7 +46,7 @@ public class PerformanceTest {
         long startTime3 = System.nanoTime();
         int minValue = Integer.MIN_VALUE;
         for (int i : al)
-            if (i>m) m=i;
+            if (i > m) m = i;
         long endTime3 = System.nanoTime();
         long duration3 = (endTime3 - startTime3);
         System.out.println("end time for just   " + duration3);
@@ -68,9 +67,6 @@ public class PerformanceTest {
         long endTime5 = System.nanoTime();
         long duration5 = (endTime5 - startTime5);
         System.out.println("for lambdas paralle  " + duration5);
-
-
-
 
 
     }

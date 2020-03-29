@@ -9,7 +9,7 @@ public class RemoveDublicateTests {
 
         int arr[] = {1, 1, 2, 3, 3, 4, 6, 6, 5};
 
-        for (int x: arr) {
+        for (int x : arr) {
             System.out.println("Before removing: " + x);
         }
 

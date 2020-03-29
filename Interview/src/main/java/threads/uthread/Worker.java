@@ -80,10 +80,10 @@ public class Worker {
 
         long end = System.currentTimeMillis();
 
-        System.out.println("Time Taken :"+ (end-start));
+        System.out.println("Time Taken :" + (end - start));
 
-        System.out.println("List : " +list.size());
-        System.out.println("List1 : " +list1.size());
+        System.out.println("List : " + list.size());
+        System.out.println("List1 : " + list1.size());
 
     }
 }

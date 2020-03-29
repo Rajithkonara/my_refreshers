@@ -47,6 +47,7 @@ public class ProducerConsumer {
             queue.put(random.nextInt(100));
         }
     }
+
     private static void consumner() throws InterruptedException {
         Random random = new Random();
 
@@ -55,7 +56,7 @@ public class ProducerConsumer {
 
             if (random.nextInt(10) == 0) {
                 Integer value = (Integer) queue.take();
-                System.out.println("Taken value : " + value +  " Queue size: " + queue.size());
+                System.out.println("Taken value : " + value + " Queue size: " + queue.size());
             }
         }
     }

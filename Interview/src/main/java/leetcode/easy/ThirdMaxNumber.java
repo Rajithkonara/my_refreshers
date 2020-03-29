@@ -9,7 +9,7 @@ public class ThirdMaxNumber {
         Integer secondMax = null;
         Integer thirdMax = null;
 
-        for (Integer num: nums) {
+        for (Integer num : nums) {
 
             if (num.equals(max) || num.equals(secondMax) || num.equals(thirdMax)) {
                 continue;
@@ -32,12 +32,12 @@ public class ThirdMaxNumber {
         }
 
         return thirdMax;
-     }
+    }
 
 
     public static void main(String[] args) {
 
-        int[] arr = {5, 2 ,2};
+        int[] arr = {5, 2, 2};
 //        {-2147483648,-2147483648,-2147483648,-2147483648,1,1,1};
 
         System.out.println(thirdMax(arr));
