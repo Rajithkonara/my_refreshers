@@ -1,0 +1,5 @@
+// To Debug
+node inspect app.js 
+
+//Use chrome to inspect
+chrome://inspect

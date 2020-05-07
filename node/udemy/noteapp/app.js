@@ -5,6 +5,7 @@ const notes = require('./notes')
 // Customize yargs version
 yargs.version('1.1.0');
 
+// node app.js add --title="t" --body="b"
 // Create add command
 yargs.command({
     command: 'add',

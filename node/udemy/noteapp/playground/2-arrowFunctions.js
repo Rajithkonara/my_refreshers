@@ -12,6 +12,8 @@
 
 // console.log(square(2));
 
+// arrow functions cannot bind this 
+//normal functions have it's own this bindings
 const event = {
     name: 'B day Party',
     guestList: ['konara', 'nimal', 'kamal'],

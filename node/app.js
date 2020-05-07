@@ -22,7 +22,7 @@ var pathObject = path.parse(__filename);
 console.log(pathObject);
 
 
-logger('message');
+new logger('message');
 
 
 

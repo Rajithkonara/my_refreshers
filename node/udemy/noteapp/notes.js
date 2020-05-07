@@ -34,6 +34,7 @@ const loadNotes = () => {
     }
 }
 
+// node app.js remove --title="some"
 const removeNote = (title) => {
     const notes = loadNotes();
     const notesToKeep = notes.filter((note) => note.title !== title);
@@ -46,6 +47,7 @@ const removeNote = (title) => {
     }
 }
 
+//node app.js list
 const listNotes = () => {
     const notes = loadNotes();
 
