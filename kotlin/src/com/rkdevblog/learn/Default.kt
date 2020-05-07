@@ -1,10 +1,9 @@
 package com.rkdevblog.learn
 
-import
-
 fun main() {
     swim()
     swim("slow")
+    feedFish()
 }
 
 // Default args
@@ -22,4 +21,12 @@ fun shouldChangeWater (day: String, temperature: Int = 22, dirty: Int = 20): Boo
         day == "Sunday" ->  true
         else -> false
     }
+}
+
+// calling a method from string template
+fun feedFish() {
+    val day = "Sunday"
+    val food = "Rice"
+    println ("Today is $day and the fish eat $food")
+    println("Change water: ${shouldChangeWater(day)}")
 }

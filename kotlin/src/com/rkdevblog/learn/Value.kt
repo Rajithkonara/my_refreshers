@@ -1,4 +1,6 @@
-package com.rkdevblog.learn// In kotlin almost everything is an expression and has a value
+package com.rkdevblog.learn
+
+// In kotlin almost everything is an expression and has a value
 
 // println() does not return a value, so it returns kotlin.Unit
 fun main() {
