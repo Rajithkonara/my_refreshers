@@ -6,7 +6,7 @@ package adapter;
  */
 public class FishingBoatAdapter implements RowingBoat {
 
-    private FishingBoat fishingBoat;
+    private final FishingBoat fishingBoat;
 
     public FishingBoatAdapter() {
         fishingBoat = new FishingBoat();
