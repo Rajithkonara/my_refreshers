@@ -1,14 +1,21 @@
 package lambdas;
 
+import java.nio.Buffer;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class Sample1 {
 
     public static void main(String[] args) {
 
+        List<Integer> i = new ArrayList<>();
+        i.replaceAll(Integer::signum);
+
         Sample1 sample = new Sample1();
 
         // Legal Lambdas
+
 
         sample.go(x -> 7 < 5);
         sample.go(x -> adder(2, 1) > 5);
@@ -31,6 +38,7 @@ public class Sample1 {
     }
 
     private void go(Predicate<Sample1> samplePredicate) {
+
         Sample1 sample1 = new Sample1();
         System.out.println(samplePredicate.test(sample1) ? "ternary true" : "ternary false");
     }
