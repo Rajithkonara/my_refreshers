@@ -49,12 +49,14 @@ const userSchema = new mongoose.Schema({
             required: true
         }
     }]
+}, {
+    timestamps: true
 })
 
 userSchema.virtual('tasks', {
     ref: 'Task',
     localField: '_id',
-    foreignFiled: 'owner'
+    foreignField: 'owner'
 })
 
 userSchema.methods.toJSON = function () {
