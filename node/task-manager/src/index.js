@@ -4,7 +4,7 @@ const userRouter = require('./routers/user')
 const taskRouter = require('./routers/tasks')
 const app = express()
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 // express middleware / filters
 // app.use((req, res, next) => {
@@ -32,9 +32,9 @@ const jwt = require('jsonwebtoken')
 
 const myFunction = async () => {
 
-    const token = jwt.sign({ _id: 1234567 }, 'secret', { expiresIn: 3600 })
+    const token = jwt.sign({ _id: 1234567 }, process.env.JWT_SECRET, { expiresIn: 3600 })
 
-    const data = jwt.verify(token, 'secret')
+    const data = jwt.verify(token, process.env.JWT_SECRET)
 
     console.log(data);
 
