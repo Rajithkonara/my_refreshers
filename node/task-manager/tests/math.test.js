@@ -1,4 +1,4 @@
-const { cal, faranhiteToCelcius, celsiusToFaranhite } = require('../src/math')
+const { cal, faranhiteToCelcius, celsiusToFaranhite, add } = require('../src/math')
 
 test('Hello World', () => {
 
@@ -35,5 +35,29 @@ test('Should return faranhite value when celcius value is given', () => {
     const faranhite = celsiusToFaranhite(0)
 
     expect(faranhite).toBe(32)
+
+})
+
+
+// test('Async Test Demo', (done) => {
+//     setTimeout(() => {
+//         expect(1).toBe(1)
+//         done()
+//     }, 2000)
+
+// })
+
+
+test('Should be add two numbers', (done) => {
+    add(2, 3).then((sum) => {
+        expect(sum).toBe(5)
+        done()
+    })
+})
+
+test('Should add two numbers asyc wait', async () => {
+    const sum = await add(10 ,22)
+    
+    expect(sum).toBe(32)
 
 })
