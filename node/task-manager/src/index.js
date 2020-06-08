@@ -2,9 +2,13 @@ const express = require('express')
 require('./db/mongoose')
 const userRouter = require('./routers/user')
 const taskRouter = require('./routers/tasks')
-const app = express()
+const app = require('../src/app')
 
 const port = process.env.PORT
+
+app.listen(port, () => {
+    console.log('Server running on ' + port)
+})
 
 // express middleware / filters
 // app.use((req, res, next) => {
@@ -14,20 +18,6 @@ const port = process.env.PORT
 //         next()
 //     }
 // })
-
-//parse json
-app.use(express.json())
-
-//use routes
-app.use(userRouter, taskRouter)
-
-
-
-app.listen(port, () => {
-    console.log('Server running on ' + port)
-})
-
-
 const jwt = require('jsonwebtoken')
 
 const myFunction = async () => {
