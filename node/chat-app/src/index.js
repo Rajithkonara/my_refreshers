@@ -19,10 +19,22 @@ app.use(express.json())
 // set up static directory
 app.use(express.static(publicDir))
 
+let count = 0
 
-io.on('connection', () => {
+io.on('connection', (socket) => {
     console.log('New connection')
+    
+    socket.emit('countUpdated', count)
+
+    socket.on('increment', () => {
+        count++
+        // socket.emit('countUpdated', count)
+        io.emit('countUpdated', count)
+    })
+
 })
+
+
 
 server.listen(port, () => {
     console.log('Started the server on ' + port)
