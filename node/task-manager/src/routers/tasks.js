@@ -62,6 +62,7 @@ router.get('/tasks/:id', auth, async (req, res) => {
         if (!task) {
             return res.status(404).send()
         }
+        console.log('cannot run');
         res.send(task)
     } catch (e) {
         res.status(500).send(e)

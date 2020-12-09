@@ -157,7 +157,7 @@ router.delete('/users/me/avatar', auth, async (req, res) => {
     res.sendStatus(200)
 })
 
-router.get('/users/:id/avatar', async (req, res, ) => {
+router.get('/users/:id/avatar', async (req, res,) => {
     try {
         const user = await User.findById(req.params.id)
 
