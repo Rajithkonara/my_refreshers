@@ -1,6 +1,4 @@
-package algoAcedemy;
-
-import java.util.Arrays;
+package alogacedemy;
 
 public class SmallestK {
 

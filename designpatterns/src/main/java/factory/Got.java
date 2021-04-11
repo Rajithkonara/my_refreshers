@@ -1,6 +1,6 @@
 package factory;
 
-import factory.Util.KingdomType;
+import factory.util.KingdomType;
 
 /**
  * Created by rajith on 7/15/18.

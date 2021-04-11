@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  */
 public class EpsonPrinter implements Printer {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CanonPrinter.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EpsonPrinter.class);
 
     /**
      * {@inheritDoc}

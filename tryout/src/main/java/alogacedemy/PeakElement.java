@@ -1,4 +1,4 @@
-package algoAcedemy;
+package alogacedemy;
 
 public class PeakElement {
 

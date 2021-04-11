@@ -1,4 +1,4 @@
-package algoAcedemy;
+package alogacedemy;
 
 import java.util.ArrayList;
 import java.util.Arrays;

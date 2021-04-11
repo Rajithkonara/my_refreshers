@@ -1,6 +1,6 @@
 package factory;
 
-import factory.Util.KingdomType;
+import factory.util.KingdomType;
 import factory.stark.StarkKingdomFactory;
 import factory.thargaryen.ThargaryenKingFactory;
 
