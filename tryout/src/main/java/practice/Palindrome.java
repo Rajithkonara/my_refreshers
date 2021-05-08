@@ -3,22 +3,26 @@ package practice;
 import java.util.Scanner;
 
 public class Palindrome {
-    public static void main(String args[]) {
-        String original, reverse = ""; // Objects of String class
-        Scanner in = new Scanner(System.in);
 
-        System.out.println("Enter a string to check if it is a palindrome");
-        original = in.nextLine();
+  public static void main(String args[]) {
+    String original, reverse = ""; // Objects of String class
+    Scanner in = new Scanner(System.in);
 
-        int length = original.length();
+    System.out.println("Enter a string to check if it is a palindrome");
+    original = in.nextLine();
 
-        for (int i = length - 1; i >= 0; i--)
-            reverse = reverse + original.charAt(i);
+    int length = original.length();
 
-        if (original.equals(reverse))
-            System.out.println("The string is a palindrome.");
-        else
-            System.out.println("The string isn't a palindrome.");
-
+    for (int i = length - 1; i >= 0; i--) {
+      reverse = reverse + original.charAt(i);
     }
+
+    if (reverse.equals(original)) {
+      System.out.println("Palindrome");
+    } else {
+      System.out.println("Not");
+    }
+
+
+  }
 }
