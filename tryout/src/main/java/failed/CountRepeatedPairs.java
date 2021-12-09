@@ -2,6 +2,8 @@ package failed;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 
 public class CountRepeatedPairs {
 
@@ -25,7 +27,18 @@ public class CountRepeatedPairs {
 
         }
 
+        // to sort
+        TreeMap<Character, Integer> sorted = new TreeMap<>(map);
 
+        System.out.println(sorted);
+
+        String value = "";
+
+        for (Entry<Character, Integer> a : sorted.entrySet()) {
+            value = value.concat(a.getKey().toString()).concat(a.getValue().toString());
+        }
+
+        System.out.println(value);
         System.out.println(map);
 
 

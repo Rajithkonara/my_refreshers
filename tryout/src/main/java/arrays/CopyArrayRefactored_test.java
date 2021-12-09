@@ -30,7 +30,7 @@ public class CopyArrayRefactored_test {
         }
 
 
-        System.out.println("arrayList " + copy);
+        System.out.println("arraylist " + copy);
 
 //        cars = copy.add(String.valueOf(cars));
 
