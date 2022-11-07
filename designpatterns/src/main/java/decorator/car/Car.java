@@ -5,5 +5,5 @@ public interface Car {
 
     //Component Interface
 
-    public void assemble();
+    void assemble();
 }

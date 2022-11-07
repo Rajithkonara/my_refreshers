@@ -16,8 +16,8 @@ public class StringScrambler {
   public static String StringScramble(String str1, String str2) {
     // code goes here
 
-    char[] arr1 = str1.toCharArray();
-    char[] arr2 = str2.toCharArray();
+    char[] arr1 = str1.toLowerCase().toCharArray();
+    char[] arr2 = str2.toLowerCase().toCharArray();
 
     List<Character> listA = new ArrayList<>();
     for(char c: arr1) {
@@ -43,7 +43,7 @@ public class StringScrambler {
 
     // keep this function call here
 
-    String s = StringScramble("h3llko", "hello");
+    String s = StringScramble("Silent", "Listen");
     System.out.println(s);
 
   }

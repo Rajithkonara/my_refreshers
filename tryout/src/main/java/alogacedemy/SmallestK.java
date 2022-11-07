@@ -12,7 +12,6 @@ public class SmallestK {
     }
 
 
-
     private static int[] bsort(int[] arr) {
         int k;
         int length = arr.length;
@@ -22,7 +21,7 @@ public class SmallestK {
             isSwapped = false;
 
             for (int j = 0; j < length - 1; j++) {
-                k = j+1;
+                k = j + 1;
                 if (arr[j] > arr[k]) {
                     swap(j, k, arr);
                     isSwapped = true;
@@ -33,8 +32,6 @@ public class SmallestK {
         }
         return arr;
     }
-
-
 
 
     private static void swap(int i, int j, int[] arr) {
