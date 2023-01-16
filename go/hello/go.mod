@@ -1,4 +1,4 @@
-module example.com/help
+module example.com/hello
 
 go 1.19
 
