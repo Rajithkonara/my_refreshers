@@ -16,7 +16,9 @@ public class JumpingOnClouds {
         int jumps = -1;
 
         for (int i = 0; i < n; i++, jumps++) {
-            if (i < n - 2 && c[i + 2] == 0) i++;
+            if (i < n - 2 && c[i + 2] == 0) {
+                i++;
+            }
         }
 
         System.out.println(jumps);

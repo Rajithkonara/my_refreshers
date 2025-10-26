@@ -45,10 +45,11 @@ public class TwoSumHashMap {
 
     public static void main(String[] args) {
 
-        int[] nums = {3, 7, 2, 15};
-        int target = 9;
+        int[] nums = {2,2};
+        int target = 4;
 
         int[] indexes = twoSum(nums, target);
+        int[] ints = twoSumOneMap(nums, target);
 
         for (int x : indexes) {
             System.out.println(nums[x]);

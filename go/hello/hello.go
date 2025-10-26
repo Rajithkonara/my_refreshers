@@ -1,10 +1,17 @@
 package main
 
 import (
-	"example.com/greetings"
 	"fmt"
 	"log"
+	"strings"
+
+	"example.com/greetings"
 )
+
+type UserUpdate struct {
+	ExternalId string `json:"external_id" validate:"required"`
+	Email      string `json:"email" validate:"required"`
+}
 
 func main() {
 
@@ -42,4 +49,40 @@ func main() {
 	// If no error was returned, print the returned map of
 	// messages to the console.
 	fmt.Println(messages)
+	update1 := UserUpdate{
+		ExternalId: "1",
+		Email:      "rajithk@gmail.com",
+	}
+	update2 := UserUpdate{
+		ExternalId: "2",
+		Email:      "rk@gmail.com",
+	}
+	update3 := UserUpdate{
+		ExternalId: "2",
+		Email:      "rkblaegmail.com",
+	}
+
+	UserUpdates := []UserUpdate{
+		update2, update3, update1,
+	}
+
+	maskEmail(&UserUpdates)
+
+	fmt.Println(UserUpdates)
+
+}
+
+func maskEmail(userUpdates *[]UserUpdate) {
+	for i := range *userUpdates {
+
+		user := &(*userUpdates)[i] // Get a pointer to the actual element
+
+		atIndex := strings.Index(user.Email, "@")
+		if atIndex == -1 {
+			continue
+		}
+
+		underscores := strings.Repeat("-", atIndex)
+		user.Email = underscores + user.Email[atIndex:]
+	}
 }
